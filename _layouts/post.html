@@ -1,15 +1,28 @@
----
-layout: default
----
-<div class="post">
+<html>
+    {%include headpost.html %}
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+          <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <hr>
+            <h3>Contributors</h3>
+            <p>
+                {% for contrib in page.contributors %}
+                <a href="{{contrib.link}}">{{contrib.name}}</a> //
+                {% endfor %}
+            </p>
+            <hr>
+          </header>
+            
+          <article class="post-content">
+            {{ content }}
+          </article>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+        </div>        
+      </div>
+    </div>
 
-</div>
+    
+</html>
