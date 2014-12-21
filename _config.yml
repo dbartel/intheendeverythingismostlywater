@@ -4,7 +4,7 @@ email: everythingismostlywater@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
     "okay so you know how the world is mostly water and your body is mostly water i’d be willing to bet that in the end pretty much everything is mostly water." is a zine put together in bryan texas by davis land, james leaf, and 
     madison parker. the online copy of the zine has less content than the physical copy. way less content.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/intheendeverythingismostlywater/" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
