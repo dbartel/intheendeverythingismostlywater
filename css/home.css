@@ -1,0 +1,134 @@
+html,body {
+    height:100%;
+    background: url(/img/pic.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+    background-color:rgba(0,0,0,0.1);
+    
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);    
+}
+
+.content {
+    width:70%;
+    margin:0 auto;
+    height:100%;
+
+    
+}
+
+.nav-item {
+    
+}
+
+.nav-item:hover {
+    opacity:0.75;
+    text-decoration: overline;
+    color:white;
+    
+}
+
+
+
+.home-block {
+    height:100vh;
+}
+
+
+.foot {
+    position:fixed;
+    background-color: rgba(0,0,0,0.2);
+    left:0px;
+    bottom:0px;
+    opacity:0.8
+}
+
+#okay span{
+    text-align:center;
+    font-size:3.0em;
+    
+}    
+
+
+#know span{
+/*    text-align: right;*/
+    position:absolute;
+    font-size:3.0em;
+    
+}
+
+#you  span{
+/*    text-align:right;*/
+    left:80%;
+    position:absolute;
+    font-size:1.5em;
+    
+}
+
+#bet span{
+/*    text-align:left;*/
+    left:50%;
+    position:absolute;
+    font-size:3.0em;
+    
+}
+
+#water{
+    text-align:center;
+
+}
+
+#content-block {
+    background-color:rgba(0,0,0,0.1);
+}
+
+#content-block a {
+    color:red;
+}
+
+/* media (phones) */
+@media only screen and (max-device-width: 480px) {
+#okay span{
+    text-align:center;
+    font-size:1.5em;
+    
+}    
+
+
+#know span{
+/*    text-align: right;*/
+    position:absolute;
+    font-size:1.0em;
+    
+}
+
+#you  span{
+/*    text-align:right;*/
+    left:80%;
+    position:absolute;
+    font-size:1.5em;
+    
+}
+
+#bet span{
+/*    text-align:left;*/
+    left:50%;
+    position:absolute;
+    font-size:1.5em;
+    
+}
+
+#water{
+    text-align:center;
+}
+
+}
+
