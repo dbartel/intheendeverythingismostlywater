@@ -45,11 +45,25 @@ hr {
 
 .foot {
     position:fixed;
-    background-color: rgba(0,0,0,0.2);
-    left:0px;
+    background-color: rgba(0,0,0,0.3);
+    right:0px;
     bottom:0px;
-    opacity:0.8
+    opacity:0.8;
+   
 }
+
+.foot a {
+    color:black;
+}
+
+.foot a:visited {
+    color:black;    
+}
+
+.foot a:hover {
+    opacity:0.3;
+}
+    
 
 #okay span{
     text-align:center;
