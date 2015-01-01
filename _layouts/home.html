@@ -2,17 +2,20 @@
 <html>
     {% include head.html %}
     <body>
+    <div class='wrapper'>
+        <div class="content">
         {{content}}
-        
-        <footer class='foot' ng-hide="hideFooter">
-            <a href="#water" id='about-footer'>about</a>
-            <a href="#water" id='get-footer'>get one</a>
-            <a href="#water" id='submit-footer'>submit</a>
-            <a href="{{ site.baseurl }}/preview">preview</a>            
-        </footer>           
+        </div>
+        <div class='footer' id='footer'>
+                <span><a href="{{ site.baseurl }}/about" class='nav-item' id='about-menu'>about</a>&nbsp;/
+                <a href="{{ site.baseurl }}/get" class='nav-item' id='get-menu'>get one</a>&nbsp;/
+                <a href="{{ site.baseurl }}/contributors" class='nav-item' id='contribute-menu'>contributors</a>&nbsp;/
+                <a href="{{ site.baseurl }}/submit" class='nav-item' id='submit-menu'>submit</a>&nbsp;/
+                <a href="{{ site.baseurl }}/preview" class='nav-item'>preview</a>/</span>    
+        </div>
+    </div>
+                
     </body>
-    <script type='text/javascript' src='{{ site.baseurl }}/lib/skrollr.min.js'></script>
     <script type='text/javascript' src='{{ site.baseurl }}/js/partials.js'></script>
-    <script type='text/javascript' src='{{ site.baseurl }}/js/main.js'></script>
  
 </html>
