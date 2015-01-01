@@ -2,6 +2,7 @@
 ---
 
 html,body {
+
     height:100%;
     width:100%;
     background: url({{ site.baseurl }}/img/bg.jpg) no-repeat center center fixed; 
@@ -10,9 +11,7 @@ html,body {
     -o-background-size: cover;
     background-size: cover;
     color:white;
-    font-family: Helvetica, sans-serif;
-//    background-color:rgba(0,0,0,0.1);
-    
+    font-family: Helvetica, sans-serif;    
 }
 
 hr {
@@ -23,9 +22,8 @@ hr {
 }
 
 .wrapper {
-    height:100%;
+    height:100%%;
     width:100%;
-//    min-width:100%;
     min-height:100%;
 }
 
@@ -34,16 +32,25 @@ hr {
     height:80%;    
 }
 
-.title {
-    font-kerning:none;
-    letter-spacing: -4px;
-    cursor:default;
-    
-    position:fixed;
-    right:0;
-    top:0;
+
+.title-block {
+    min-height: 13%;
+
     text-align:right;
-    font-size:3em;
+    font-size:400%;
+    
+}
+
+.title {
+
+    font-kerning:none;
+    letter-spacing: -5px;
+    cursor:default;
+    height: 100%;
+    width:100%;
+    
+    position:absolute;
+    right:2%;
     
     -webkit-user-select: none; /* Chrome/Safari */        
     -moz-user-select: none; /* Firefox */
@@ -54,21 +61,57 @@ hr {
     user-select: none;
 }
 
+
 .footer {
     cursor:default;
     position:fixed;
     font-size:3em;
-    bottom:0;
+    bottom:-10%;
     left:0;
     width:100%;
+    height:20%;
+    
+    padding-top: 5%;
+    
     text-align:center;
     letter-spacing:-5px;
 }
 
-/* media (phones) */
-@media only screen and (max-device-width: 480px) {
-
+/* media */
+//@media only screen and (max-device-width: 480px) {
+//
+//}
+//
+@media only screen and (max-width: 1045px) {
+    .title-block {
+        font-size:375%;
+    }
 }
+
+@media only screen and (max-width: 970px) {
+    .title-block {
+        font-size:350%;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    .title-block {
+        font-size:300%;
+    }
+}
+
+@media only screen and (max-width: 801px) {
+    .footer {
+        font-size:2.75em;
+    }
+    .title-block {
+        font-size:260%;
+    }    
+}
+
+
+
+/* */
 
 a {
     opacity:1;
@@ -108,7 +151,7 @@ a.nav-item:hover {
 }
 
 .bigger-text {
-    font-size:1.5em;
+    font-size:1em;
 }
 
 
