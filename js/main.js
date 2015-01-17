@@ -1,41 +1,32 @@
-//skrollr
-var s = skrollr.init();
+function sizeText(cl) {
+     $( cl ).each(function ( i, box ) {
 
-var content = document.getElementById("content-block");
+        var width = $( box ).width(),
+            height = $( box ).height(),
+            html = '<span style="white-space:nowrap">',
+            line = $( box ).wrapInner( html ).children()[ 0 ],
+            n = 100;
 
-//event listeners
-document.getElementById('about-menu').addEventListener("click", function(evt) {
-    content.style.opacity = "0";
-    content.innerHTML = partials.about;
-    content.style.opacity = "1";
-});
+        $( box ).css( 'font-size', n );
 
-document.getElementById('get-menu').addEventListener("click", function(evt) {
-    content.style.opacity = "0";
-    content.innerHTML = partials.get;
-    content.style.opacity = "1";
-});
+        while ( $( line ).width() > width  && $( line ).height() > height ) {
+            $( box ).css( 'font-size', --n );
+        }
 
-document.getElementById('submit-menu').addEventListener("click", function(evt) {
-    content.style.opacity = "0";
-    content.innerHTML = partials.submit;
-    content.style.opacity = "1";
-});
+        $( box ).text( $( line ).text() );
 
-document.getElementById('about-footer').addEventListener("click", function(evt) {
-    content.style.opacity = "0";
-    content.innerHTML = partials.about;
-    content.style.opacity = "1";
-});
+    });   
+    
+}
 
-document.getElementById('get-footer').addEventListener("click", function(evt) {
-    content.style.opacity = "0";
-    content.innerHTML = partials.get;
-    content.style.opacity = "1";
-});
+function resizeAll() {
+    sizeText(".title-block");
+//    sizeText(".nav-item");
+}
 
-document.getElementById('submit-footer').addEventListener("click", function(evt) {
-    content.style.opacity = "0";
-    content.innerHTML = partials.submit;
-    content.style.opacity = "1";
+
+
+$("document").ready(function() {
+
+
 });

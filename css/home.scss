@@ -1,8 +1,11 @@
 ---
 ---
 
-html,body {
+* {
+    margin:0;
+}
 
+html,body {
     height:100%;
     width:100%;
     background: url({{ site.baseurl }}/img/bg.jpg) no-repeat center center fixed; 
@@ -11,7 +14,8 @@ html,body {
     -o-background-size: cover;
     background-size: cover;
     color:white;
-    font-family: Helvetica, sans-serif;    
+    font-family: Helvetica, sans-serif;
+    display:flex;
 }
 
 hr {
@@ -22,36 +26,27 @@ hr {
 }
 
 .wrapper {
-    height:100%%;
+    height:100%;
     width:100%;
     min-height:100%;
 }
 
 .content {
     width:100%;
-    height:80%;    
+//    height:90%;
+    min-height:100%;
+    flex:1;
 }
 
-
-.title-block {
-    min-height: 13%;
-
-    text-align:right;
-    font-size:400%;
-    
-}
-
+/* Title */
 .title {
-
     font-kerning:none;
-    letter-spacing: -5px;
+    font-weight: bold;
+    letter-spacing: -8px;
     cursor:default;
     height: 100%;
     width:100%;
-    
-    position:absolute;
-    right:2%;
-    
+    text-align:right;
     -webkit-user-select: none; /* Chrome/Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+ */
@@ -61,57 +56,34 @@ hr {
     user-select: none;
 }
 
-
-.footer {
-    cursor:default;
-    position:fixed;
-    font-size:3em;
-    bottom:-10%;
-    left:0;
+.title-block {
     width:100%;
-    height:20%;
-    
-    padding-top: 5%;
-    
-    text-align:center;
-    letter-spacing:-5px;
+    line-height: .8;
+    margin-left: -10px;
+    font-size: 8em;
 }
 
-/* media */
-//@media only screen and (max-device-width: 480px) {
-//
-//}
-//
-@media only screen and (max-width: 1045px) {
-    .title-block {
-        font-size:375%;
-    }
+/* Title */
+
+/* Footer */
+
+
+.footer-text {
+    width:100%;
+    height:10%;
 }
 
-@media only screen and (max-width: 970px) {
-    .title-block {
-        font-size:350%;
-    }
-}
-
-@media only screen and (max-width: 875px) {
-    .title-block {
-        font-size:300%;
-    }
-}
-
-@media only screen and (max-width: 801px) {
-    .footer {
-        font-size:2.75em;
-    }
-    .title-block {
-        font-size:260%;
-    }    
+.footer-content {
+    height:100%;
+    width:100%;
+    font-weight:bold;
+    font-size: 5em;
+    text-align: center;
 }
 
 
+/* Footer */
 
-/* */
 
 a {
     opacity:1;
@@ -119,8 +91,6 @@ a {
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;    
     -o-transition: opacity .25s ease-in-out;         
-        
-    
 }
 
 a:hover {
@@ -133,8 +103,6 @@ a:hover {
 a.nav-item {
     color:white;
     text-decoration: none;
-    display:inline-block;
-
 }
 
 a.nav-item:hover {
@@ -153,5 +121,3 @@ a.nav-item:hover {
 .bigger-text {
     font-size:1em;
 }
-
-
