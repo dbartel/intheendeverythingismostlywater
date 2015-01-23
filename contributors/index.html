@@ -1,0 +1,13 @@
+---
+layout: home
+---
+
+<div class="centered">
+{% for post in site.posts %}
+    {{post.title}} //
+    {% for contrib in post.contributors %}
+        <a href="{{contrib.link}}" class="contributor">{{contrib.name}}</a> //
+    {% endfor %}
+          
+{% endfor %}
+</div>

@@ -1,5 +1,25 @@
 /* Media Queries for home page */
 
-@media screen and (min-width: 1024px) {
-    font-size:10px;
+@media screen and (max-width: 1366px) {
+    .title-block {
+        font-size:6em;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .title-block {
+        font-size:5.5em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .title-block {
+        font-size:5em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title-block {
+        font-size:3em;
+    }
 }
