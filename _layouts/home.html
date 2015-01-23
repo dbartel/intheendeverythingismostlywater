@@ -2,19 +2,15 @@
 <html>
     {% include head.html %}
     <body>
-    <div class='wrapper'>
         <div class="content">
         {{content}}
         </div>
-        <footer class='footer-text'>
-                <div class='footer-content'>
+        <footer class='site-footer'>
                     <a href="{{ site.baseurl }}/about" class='nav-item' id='about-menu'>about</a>&nbsp;/
                     <a href="{{ site.baseurl }}/get" class='nav-item' id='get-menu'>get one</a>&nbsp;/
                     <a href="{{ site.baseurl }}/contributors" class='nav-item' id='contribute-menu'>contributors</a>&nbsp;/
                     <a href="{{ site.baseurl }}/submit" class='nav-item' id='submit-menu'>submit</a>&nbsp;/
-                    <a href="{{ site.baseurl }}/preview" class='nav-item'>preview</a>&nbsp;/
-                </div>
+                    <a href="{{ site.baseurl }}/preview" class='nav-item'>preview</a>
         </footer>
-    </div>     
     </body> 
 </html>

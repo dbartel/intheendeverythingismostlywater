@@ -1,0 +1,5 @@
+/* Media Queries for home page */
+
+@media screen and (min-width: 1024px) {
+    font-size:10px;
+}
