@@ -3,15 +3,32 @@ layout: preview
 ---
 
 <div>
-    <h1>Preview</h1>
-    <hr>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    {% for post in paginator.posts %}
+    <a href="{{post.url}}">
+        <div class="zine-cover">
+            <div class="zine-cover-photo">
+                <img src="{{post.cover_photo}}" alt="click to read">
+            </div>
+            <div class="zine-info-text">
+                <span>read</span>
+            </div>
+            <div class="zine-cover-text">
+                <span>{{post.title}}</span>
+            </div>
+        </div>
+    </a>
     {% endfor %}
-  </ul>    
+    
+    <div class="footer">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">newer</a>
+        {% endif %} 
+
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">older</a>
+        {% endif %}
+        <span class="info-text">click anywhere to read</span>
+    </div>
+    
+
 </div>

@@ -1,0 +1,57 @@
+html, body {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+
+.zine-cover {
+    height:100%;
+    width:100%;
+}
+
+.zine-cover-photo {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    
+}
+
+.zine-cover-photo > img {
+    height:100%;
+    width:100%;
+}
+
+
+.zine-cover-text {
+    position:absolute;
+    top:0;
+    right:0;
+    background:rgba(0,0,0,0.3);
+    font-size:3em;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    font-size: 3em;
+}
+
+.info-text {
+    opacity:0.5;
+    font-size:0.3em;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+a:hover {
+    opacity:.5;
+}
+
+
+
