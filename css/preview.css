@@ -40,8 +40,13 @@ html, body {
 }
 
 .info-text {
+    position:absolute;
+    top:0;
+    left:0;
     opacity:0.5;
-    font-size:0.3em;
+    font-size:1em;
+    background-color:rgba(0,0,0,0.1);
+    color:white;
 }
 
 a {

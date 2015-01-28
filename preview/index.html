@@ -18,7 +18,7 @@ layout: preview
         </div>
     </a>
     {% endfor %}
-    
+    <span class="info-text">click anywhere to read</span>
     <div class="footer">
         {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path }}" class="previous">newer</a>
@@ -27,7 +27,7 @@ layout: preview
         {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path }}" class="next">older</a>
         {% endif %}
-        <span class="info-text">click anywhere to read</span>
+        
     </div>
     
 
