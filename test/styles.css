@@ -1,0 +1,82 @@
+html,body {
+    height:100%;
+    width:100%;
+    font-family: Roboto, helvetica;
+     margin:0;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);    
+}
+
+.center-text {
+    text-align: center;
+}
+
+.contributors {
+    width:65%;
+    margin:0 auto;
+    margin-bottom:-15%;
+}
+
+.content {
+    width:100%;  
+}
+
+.title {
+    text-align: center;
+}
+
+
+.page {
+    min-height: 100%;
+    margin:0 auto;
+    width:65%;    
+    padding:15%;
+}
+
+.contrast {
+    color:white;
+    background-color:#363636;
+    width:100%;
+}
+
+.author {
+    opacity:0.5;
+}
+
+.left-wrap {
+    float:left;
+    clear:right;
+}
+.middle-wrap {
+    float:none;
+}
+
+.middle-wrap > img {
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.left-wrap, .right-wrap {
+    margin:10px;
+}
+
+.right-wrap {
+    float:right;
+    clear:left;
+}
+
+.emphasized {
+    font-size:3em;
+}
+
+
+
+img {
+    display:block;
+}
