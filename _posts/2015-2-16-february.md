@@ -4,40 +4,40 @@ title: "february 2015"
 cover_photo: "http://i.imgur.com/om2tALe.jpg"
 date: 2015-2-16
 contributors:
--
-name: aaron gonzalez
--
-name: austyn degelman 
--
-name: bill moran 
--
-name: carmen brady 
--
-name: christian m patterson
--
-name: daniel bartel 
--
-name: davis land
--
-name: dc demarse 
--
-name: james leaf 
--
-name: joshua jennifer espinoza 
--
-name: louis packard
--
-name: lily bulan 
--
-name: natalie kay 
--
-name: rachel balla 
--
-name: sal ramirez
--
-name: veronica brady 
--
-name: william james 
+    -
+        name: aaron gonzalez
+    -
+        name: austyn degelman 
+    -
+        name: bill moran 
+    -
+        name: carmen brady 
+    -
+        name: christian m patterson
+    -
+        name: daniel bartel 
+    -
+        name: davis land
+    -
+        name: dc demarse 
+    -
+        name: james leaf 
+    -
+        name: joshua jennifer espinoza 
+    -
+        name: louis packard
+    -
+        name: lily bulan 
+    -
+        name: natalie kay 
+    -
+        name: rachel balla 
+    -
+        name: sal ramirez
+    -
+        name: veronica brady 
+    -
+        name: william james 
 ---
 
 ![](https://41.media.tumblr.com/657de04e285e94c9a04135eacc8264ce/tumblr_njvr3vUDOK1u0e83lo1_500.jpg)
