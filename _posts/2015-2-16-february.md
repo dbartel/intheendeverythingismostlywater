@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "february 2015"
-cover_photo: "http://i.imgur.com/om2tALe.jpg"
+cover_photo: "http://i.imgur.com/mcgh0w6.jpg"
 date: 2015-2-16
 contributors:
     -
