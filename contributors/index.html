@@ -4,10 +4,13 @@ layout: home
 
 <div class="centered">
 {% for post in site.posts %}
-    {{post.title}} //
+    <div class="contributor-block">
+        <b>{{post.title}}</b> //
     {% for contrib in post.contributors %}
-        <a href="{{contrib.link}}" class="contributor">{{contrib.name}}</a> //
+        <span  class="contributor">{{contrib.name}}</span> //
     {% endfor %}
+        <hr>
+    </div>
           
 {% endfor %}
 </div>
